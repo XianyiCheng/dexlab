@@ -1,36 +1,29 @@
 ---
 layout: page
 ---
+
 <div class="post">
   <article>
     {% if page.profiles %}
-      {% for profile in page.profiles %}
-        <hr>
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-          {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-            {% else %}
-              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-            {% endif %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-          {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
-          {% endif %}
-        </div>
-
-        <div class="clearfix">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          {% else %}
-            {{ content }}
-          {% endif %}
+      {% for group in page.profiles %}
+        <h2 style="margin-top: 2rem; margin-bottom: 1rem;">{{ group.title }}</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem;">
+          {% for member in group.members %}
+            <div style="width: 180px; text-align: center;">
+              {% if member.image %}
+                <img 
+                  src="{{ 'assets/img/' | append: member.image | relative_url }}" 
+                  alt="{{ member.name }}" 
+                  style="width: 150px; height: 150px; object-fit: cover; margin-bottom: 0.5rem; border-radius: 8px;">
+              {% endif %}
+              <div style="font-size: 1rem;">{{ member.name }}</div>
+              <div style="font-size: 1rem;">{{ member.position }}</div>
+            </div>
+          {% endfor %}
         </div>
       {% endfor %}
     {% endif %}
   </article>
 </div>
+
+{{ content }}
