@@ -16,7 +16,7 @@ last_name:
 #   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 # keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🍸 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🦾 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://alshedivat.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -86,8 +86,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: cheng # blog_name will be displayed in your blog page
-blog_description: cheng's blog
+blog_name: dexlab # blog_name will be displayed in your blog page
+blog_description: dexlab's blog
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -115,7 +115,7 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname:  # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.

@@ -4,14 +4,10 @@ title: about
 permalink: /
 subtitle: The Robot Dexterity Lab @ Duke University
 
-profile:
-  align: right
-  image: 11.jpg
-  image_circular: false # crops the image to make it circular
-  # more_info: >
-  #   <p>555 your office number</p>
-  #   <p>123 your address street</p>
-  #   <p>Your City, State 12345</p>
+#profile:
+#  align: right
+#  image: 11.jpg
+#  image_circular: false # crops the image to make it circular
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -28,13 +24,66 @@ latest_posts:
 ---
 The research goal of the Robot Dexterity Lab (DexLab) is human-level dexterity in robotic manipulation. In the DexLab, we believe that dexterity is a crucial manipulation capability that all robots will have in the future. Dexterity is not just manipulation with complex, high-DoF hands; it is the motion intelligence with vast complexity that still awaits more understanding. 
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Currently, we are exploring questions such as:
+- How do we develop robot manipulation skills that are generalizable across tasks and transferable across robots?
+- What new forms of dexterity are possible, and can all robots be dexterous in manipulation?
+- What is the fundamental complexity of manipulation? Can we develop a formal framework to characterize its difficulty, robustness, and evaluation methods?
+- What infrastructure best supports the development, integration, and benchmarking of generalizable manipulation skills?
 
 <br>
 
-### Teaching
-fkds
+<div id="gallery-slider" style="max-width:700px; margin:auto; position:relative; height:375px;">
+  <button id="gallery-prev"
+    style="position:absolute; left:-60px; top:50%; transform:translateY(-50%); background:transparent; color:#888; border:none; font-size:2.5rem; padding:0 16px; cursor:pointer; border-radius:8px; height:60px; width:60px; display:flex; align-items:center; justify-content:center; z-index:2;">
+    &#8592;
+  </button>
+  <img id="gallery-image" src="{{ 'assets/img/1.jpg' | relative_url }}" alt="Gallery Photo" style="height:100%; width:auto; max-width:680px; object-fit:cover; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.08); display:block; margin:auto;">
+  <button id="gallery-next"
+    style="position:absolute; right:-60px; top:50%; transform:translateY(-50%); background:transparent; color:#888; border:none; font-size:2.5rem; padding:0 16px; cursor:pointer; border-radius:8px; height:60px; width:60px; display:flex; align-items:center; justify-content:center; z-index:2;">
+    &#8594;
+  </button>
+</div>
+
+<div id="gallery-caption" style="text-align:center; margin-top:0px; font-size:1rem; color:#444;"></div>
+<div id="gallery-dots" style="text-align:center; margin-top:10px;"></div>
+
+<script>
+  const images = [
+    "{{ 'assets/img/img_4229_720.jpg' | relative_url }}",
+    "{{ 'assets/img/img_4235_720.jpg' | relative_url }}",
+  ];
+  const captions = [
+    "DexLab Pickleball League, Summer 2025 Season",
+    "DexLab Pickleball League, Summer 2025 Season",
+  ];
+  let current = 0;
+  const img = document.getElementById('gallery-image');
+  const dots = document.getElementById('gallery-dots');
+  const caption = document.getElementById('gallery-caption');
+  let timer;
+
+  function showImage(idx) {
+    img.src = images[idx];
+    caption.textContent = captions[idx];
+    dots.innerHTML = images.map((_, i) =>
+      `<span style="display:inline-block;width:10px;height:10px;margin:0 3px;border-radius:50%;background:${i===idx?'#888':'#ccc'};cursor:pointer;" onclick="showImage(${i})"></span>`
+    ).join('');
+    current = idx;
+    resetTimer();
+  }
+
+  function nextImage() {
+    showImage((current+1)%images.length);
+  }
+
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(nextImage, 3000); // Change image every 2 seconds
+  }
+
+  document.getElementById('gallery-prev').onclick = () => showImage((current-1+images.length)%images.length);
+  document.getElementById('gallery-next').onclick = () => nextImage();
+
+  window.showImage = showImage;
+  showImage(0);
+</script>
