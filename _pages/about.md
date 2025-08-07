@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: The Robot Dexterity Lab @ Duke University
+subtitle: 
 
 #profile:
 #  align: right
@@ -22,6 +22,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+**The Robot Dexterity Lab @ Duke University**
 
 The research goal of the Robot Dexterity Lab (DexLab) is human-level dexterity in robotic manipulation. In the DexLab, we believe that dexterity is a crucial manipulation capability that all robots will have in the future. Dexterity is not just manipulation with complex, high-DoF hands; it is the motion intelligence with vast complexity that still awaits more understanding.
 

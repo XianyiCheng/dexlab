@@ -128,6 +128,13 @@ $ bundle exec jekyll serve
 
 To see the template running, open your browser and go to `http://localhost:4000`. You should see a copy of the theme's [demo website](https://alshedivat.github.io/al-folio/). Now, feel free to customize the theme however you like. After you are done, remember to **commit** your final changes.
 
+## Prettier check
+avoid prettier check error on github pages
+```bash
+npm install --save-dev @shopify/prettier-plugin-liquid
+npx prettier . --write
+```
+
 ## Deployment
 
 Deploying your website to [GitHub Pages](https://pages.github.com/) is the most popular option.
