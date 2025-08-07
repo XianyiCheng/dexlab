@@ -1,7 +1,6 @@
 ---
 layout: page
 ---
-
 <div class="post">
   <article>
     {% if page.profiles %}
@@ -11,10 +10,11 @@ layout: page
           {% for member in group.members %}
             <div style="width: 180px; text-align: center;">
               {% if member.image %}
-                <img 
-                  src="{{ 'assets/img/' | append: member.image | relative_url }}" 
-                  alt="{{ member.name }}" 
-                  style="width: 150px; height: 150px; object-fit: cover; margin-bottom: 0.5rem; border-radius: 8px;">
+                <img
+                  src="{{ 'assets/img/' | append: member.image | relative_url }}"
+                  alt="{{ member.name }}"
+                  style="width: 150px; height: 150px; object-fit: cover; margin-bottom: 0.5rem; border-radius: 8px;"
+                >
               {% endif %}
               {% if member.url %}
                 <div style="font-size: 1rem;">

@@ -3,7 +3,7 @@ layout: profiles
 permalink: /people/
 title: people
 hide_title: true
-description: 
+description:
 nav: true
 nav_order: 2
 
@@ -23,7 +23,7 @@ profiles:
       - name: "Jinzhou Li"
         position: "PhD student"
         image: "jinzhouli.jpeg"
-        url: "https://kingchou007.github.io/"      
+        url: "https://kingchou007.github.io/"
       - name: "Xinyuan Luo"
         position: "PhD student"
         image: "xinyuanluo.png"
