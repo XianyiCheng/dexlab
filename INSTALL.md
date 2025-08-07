@@ -10,6 +10,7 @@
     - [Have Bugs on Docker Image?](#have-bugs-on-docker-image)
   - [Local Setup with Development Containers](#local-setup-with-development-containers)
   - [Local Setup (Legacy, no longer supported)](#local-setup-legacy-no-longer-supported)
+  - [Prettier check](#prettier-check)
   - [Deployment](#deployment)
     - [For personal and organization webpages](#for-personal-and-organization-webpages)
     - [For project pages](#for-project-pages)
