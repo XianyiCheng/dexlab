@@ -50,7 +50,7 @@ profiles:
         image: "aaronthomas.jpeg"
       - name: "Chloe Gu"
         position: "Undergrad student"
-        image: "6.jpg"
+        image: "chloegu.jpg"
       - name: "Cody Andres Alessio-Bunnell"
         position: "Undergrad student"
         image: "cody.jpeg"

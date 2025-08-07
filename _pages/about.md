@@ -44,7 +44,7 @@ Currently, we are exploring questions such as:
   </button>
 </div>
 
-<div id="gallery-caption" style="text-align:center; margin-top:0px; font-size:1rem; color:#444;"></div>
+<div id="gallery-caption" style="text-align:center; margin-top:10px; font-size:1rem; color:#444;"></div>
 <div id="gallery-dots" style="text-align:center; margin-top:10px;"></div>
 
 <script>
