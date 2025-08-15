@@ -11,7 +11,7 @@ profiles:
   - title: "PI"
     members:
       - name: "Xianyi Cheng"
-        position: "Assitant Professor at Duke MEMS"
+        position: "Assistant Professor at Duke MEMS"
         image: "xianyicheng.jpg"
         url: "https://xianyicheng.github.io/"
 
@@ -44,7 +44,7 @@ profiles:
         image: "jaredbailey.jpg"
       - name: "Xiao Wei"
         position: "Master student"
-        image: "xiaowei.jpeg"
+        image: "xiaowei_2.jpeg"
       - name: "Aaron Thomas"
         position: "Master student"
         image: "aaronthomas.jpeg"
