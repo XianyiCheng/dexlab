@@ -44,7 +44,7 @@ profiles:
         image: "jaredbailey.jpg"
       - name: "Xiao Wei"
         position: "Master student"
-        image: "xiaowei_2.jpeg"
+        image: "xiaowei_2.jpg"
       - name: "Aaron Thomas"
         position: "Master student"
         image: "aaronthomas.jpeg"
