@@ -186,10 +186,22 @@ Currently, we are exploring questions such as:
   const images = [
     "{{ 'assets/img/img_4229_720.jpg' | relative_url }}",
     "{{ 'assets/img/img_4235_720.jpg' | relative_url }}",
+    "{{ 'assets/img/lab_photos/IMG_4391.jpg' | relative_url }}",
+    "{{ 'assets/img/lab_photos/IMG_4403.jpg' | relative_url }}",
+    "{{ 'assets/img/lab_photos/IMG_4417.jpg' | relative_url }}",
+    "{{ 'assets/img/lab_photos/IMG_4419.jpg' | relative_url }}",
+    "{{ 'assets/img/lab_photos/IMG_4423.jpg' | relative_url }}",   
+
   ];
   const captions = [
     "DexLab Pickleball League, Summer 2025 Season",
     "DexLab Pickleball League, Summer 2025 Season",
+    "Lab BBQ Party, Summer 2025",
+    "Lab BBQ Party, Summer 2025",
+    "Lab BBQ Party, Summer 2025",
+    "Lab BBQ Party, Summer 2025", 
+    "Lab BBQ Party, Summer 2025", 
+
   ];
   let current = 0;
   const img = document.getElementById('gallery-image');

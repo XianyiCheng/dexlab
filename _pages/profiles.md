@@ -22,7 +22,7 @@ profiles:
         image: "weizheni.jpg"
       - name: "Jinzhou Li"
         position: "PhD student"
-        image: "jinzhouli.jpeg"
+        image: "jinzhouli.jpg"
         url: "https://kingchou007.github.io/"
       - name: "Xinyuan Luo"
         position: "PhD student"
