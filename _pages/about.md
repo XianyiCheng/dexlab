@@ -234,5 +234,6 @@ Currently, we are exploring questions such as:
   document.getElementById('gallery-next').onclick = () => nextImage();
 
   window.showImage = showImage;
+  
   showImage(0);
 </script>
