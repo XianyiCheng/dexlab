@@ -190,7 +190,8 @@ Currently, we are exploring questions such as:
     "{{ 'assets/img/lab_photos/IMG_4403.jpg' | relative_url }}",
     "{{ 'assets/img/lab_photos/IMG_4417.jpg' | relative_url }}",
     "{{ 'assets/img/lab_photos/IMG_4419.jpg' | relative_url }}",
-    "{{ 'assets/img/lab_photos/IMG_4423.jpg' | relative_url }}",   
+    "{{ 'assets/img/lab_photos/IMG_4423.jpg' | relative_url }}", 
+    "{{ 'assets/img/lab_photos/IMG_4642.jpg' | relative_url }}"
 
   ];
   const captions = [
@@ -201,6 +202,7 @@ Currently, we are exploring questions such as:
     "Lab BBQ Party, Summer 2025",
     "Lab BBQ Party, Summer 2025", 
     "Lab BBQ Party, Summer 2025", 
+    "2025 Summer Pickleball — Champion: Yifei | 2nd Place (tie): Jared & Haoyu"
 
   ];
   let current = 0;

@@ -25,7 +25,7 @@ profiles:
         image: "jinzhouli.jpg"
         url: "https://kingchou007.github.io/"
       - name: "Xinyuan Luo"
-        position: "PhD student"
+        position: "PhD student (coadvised with Boyuan Chen)"
         image: "xinyuanluo.png"
         url: "https://luoxinyuan.github.io/"
       - name: "Yifei Dong"
