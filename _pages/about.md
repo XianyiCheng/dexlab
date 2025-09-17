@@ -23,6 +23,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 
 gallery:
+  - image: "lab_photos/IMG_4642.jpg"
+    caption: "2025 Summer Pickleball — Champion: Yifei | 2nd Place (tie): Jared & Haoyu"
   - image: "lab_photos/img_4229_720.jpg"
     caption: "DexLab Pickleball League, Summer 2025 Season"
   - image: "lab_photos/img_4235_720.jpg"
@@ -37,8 +39,9 @@ gallery:
     caption: "Lab BBQ Party, Summer 2025"
   - image: "lab_photos/IMG_4423.jpg"
     caption: "Lab BBQ Party, Summer 2025"
-  - image: "lab_photos/IMG_4642.jpg"
-    caption: "2025 Summer Pickleball — Champion: Yifei | 2nd Place (tie): Jared & Haoyu"
+  - image: "lab_photos/img_4738_720.jpg"
+    caption: "'DexLab Grand Opening' Made by DexLab Friends, Spring 2025"  
+
 
 ---
 **The Robot Dexterity Lab @ Duke University**
