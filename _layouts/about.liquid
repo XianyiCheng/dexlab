@@ -68,21 +68,20 @@ layout: default
           max-width: 100%;
           object-fit: contain;
           border-radius: 8px;
-          box-shadow: 0 2px 8px rgba(0,0,0,0.08);
           display: block;
         }
         
         .gallery-btn {
           position: absolute;
           top: 50%;
-          transform: translateY(-50%);
+          transform: translateY(-20%);
           background: transparent;
-          color: #888;
+          color: #999;
           border: none;
           font-size: 2.5rem;
           padding: 0 16px;
           cursor: pointer;
-          border-radius: 8px;
+          border-radius: 3px;
           height: 60px;
           width: 60px;
           display: flex;
@@ -93,7 +92,7 @@ layout: default
         }
         
         .gallery-btn:hover {
-          background: rgba(0,0,0,0.1);
+          background: rgba(0, 0, 0, 0.1);
           color: #555;
         }
         
@@ -182,9 +181,9 @@ layout: default
 
       <div class="gallery-container">
         <div class="gallery-slider">
-          <button id="gallery-prev" class="gallery-btn gallery-prev">&#8592;</button>
-          <img id="gallery-image" class="gallery-image" src="{{ 'assets/img/1.jpg' | relative_url }}" alt="Gallery Photo">
-          <button id="gallery-next" class="gallery-btn gallery-next">&#8594;</button>
+          <button id="gallery-prev" class="gallery-btn gallery-prev">&#8249;</button>
+          <img id="gallery-image" class="gallery-image z-depth-1" src="{{ 'assets/img/1.jpg' | relative_url }}" alt="Gallery Photo">
+          <button id="gallery-next" class="gallery-btn gallery-next">&#8250;</button>
         </div>
       </div>
 
