@@ -52,6 +52,6 @@ Currently, we are exploring questions such as:
 
 - How do we develop robot manipulation skills that are generalizable across tasks and transferable across robots?
 - What new forms of dexterity are possible, and can all robots be dexterous in manipulation?
-- What is the fundamental complexity of manipulation? Can we develop a formal framework to characterize its difficulty, robustness, and evaluation methods?
+- What are the fundamental elements of manipulation? Can we develop something formal to study its complexity, difficulty, robustness, and evaluation?
 - What infrastructure best supports the development, integration, and benchmarking of generalizable manipulation skills?
 
