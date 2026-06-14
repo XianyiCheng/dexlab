@@ -60,13 +60,13 @@ profiles:
   - title: "Alumni"
     list: true
     members:
-      - name: "Cody Andres Alessio-Bunnell"
-        position: "Undergrad student"
-        next: "UT Austin, PhD Student"
       - name: "Haoyu Li"
         position: "Research assistant"
         image: "haoyuli.jpg"
         next: "TAMU, PhD Student"
+      - name: "Cody Andres Alessio-Bunnell"
+        position: "Undergrad student"
+        next: "UT Austin, PhD Student"
       - name: "Xiao Wei"
         position: "Master student"
         image: "xiaowei_2.jpg"
