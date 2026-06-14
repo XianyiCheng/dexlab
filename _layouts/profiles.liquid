@@ -6,6 +6,19 @@ layout: page
     {% if page.profiles %}
       {% for group in page.profiles %}
         <h2 style="margin-top: 2rem; margin-bottom: 1rem;">{{ group.title }}</h2>
+        {% if group.list %}
+        <ul style="margin-bottom: 3rem;">
+          {% for member in group.members %}
+            <li style="margin-bottom: 0.5rem;">
+              {% if member.url %}
+                <a href="{{ member.url }}" target="_blank">{{ member.name }}</a>
+              {% else %}
+                {{ member.name }}
+              {% endif %}{% if member.position %}, {{ member.position }}{% endif %}{% if member.next %} &rarr; {{ member.next }}{% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+        {% else %}
         <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem;">
           {% for member in group.members %}
             <div style="width: 180px; text-align: center;">
@@ -30,6 +43,7 @@ layout: page
             </div>
           {% endfor %}
         </div>
+        {% endif %}
       {% endfor %}
     {% endif %}
   </article>
