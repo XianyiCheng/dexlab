@@ -40,7 +40,7 @@ profiles:
         image: "ximanzhang.png"
       - name: "Steven Yang"
         position: "Master student"
-        image: "1.jpg"
+        image: "stevenyang.png"
       - name: "Xingrui Chen"
         position: "Master student"
         image: "xingruichen.jpg"
@@ -55,7 +55,7 @@ profiles:
         image: "jacksoncodd.jpeg"
       - name: "Eva Bonde"
         position: "Undergrad student"
-        image: "4.jpg"
+        image: "evabonde.jpg"
 
   - title: "Alumni"
     list: true
